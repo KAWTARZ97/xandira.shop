@@ -2,7 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nam<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Living Easy Health Services LLC — Ambulatory Care • San Francisco, CA</title>
+<meta name="description" content="Living Easy Health Services LLC — friendly ambulatory health care in San Francisco, CA. Preventive visits, chronic care, telehealth, labs & home visits.">
+<style>
+  :root{
+    --teal:#14b8a6;  /* primary */
+    --blue:#2563eb; /* accent */
+    --ink:#0b1220;
+    --bg:#f5fbfb;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);color:#182133}
+  a{color:#0b1220;text-decoration:none}
+
+  header{
+    background:linear-gradient(120deg,#0f2047,#0b3b39 65%);
+    color:#fff;text-align:center;padding:28px 16px;border-bottom:6px solid var(--teal);
+    position:relative;overflow:hidden
+  }
+  header h1{margin:0;font-size:2.2rem;letter-spacing:.3px}
+  header p{margin:6px 0 0;opacity:.95}
+  header:after{
+    content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;
+    background:radial-gradient(closest-side,rgba(20,184,166,.33),transparent 72%);
+    border-radius:50%;filter:blur(6px);animation:float 7s ease-in-out infinite
+  }
+  @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,12px)}}
+
+  nav{background:#0f1a3a;text-align:center;padding:12px}
+  nav a{color:#fff;margin:0 14px;font-weight:700}
+  nav a:hover{color:var(--teal)}
+
+  .hero{max-width:1100px;margin:22px auto;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center;padding:0 14px}
+  .hero img{
+    width:100%;border-radius:14px;border:4px solid var(--teal);object-fit:cover;
+    animation:pulse 2.8s ease-in-out infinite
+  }
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(20,184,166,0)}50%{box-shadow:0 0 0 14px rgba(20,184,166,.16)}}
+  .hero .box{background:var(--card);border-left:6px solid var(--blue);border-radius:14px;padding:16px}
+  .pill{display:inline-block;background:#e8fff9;border:1px solid #c7f4ec;color:#0f6259;border-radius:999px;padding:6px 12px;margin:6px 6px 0 0;font-size:.9rem}
+  .pill.wave{animation:wave 2.6s ease-in-out infinite}
+  @keyframes wave{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+
+  .section{max-width:1100px;margin:22px auto;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+  .section h2{margin:0 0 12px;color:var(--ink)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  ul{margin:0;padding-left:18px;line-height:1.8}
+
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .card{background:#eef6ff;border:1px solid #d9e7ff;border-left:6px solid var(--blue);border-radius:10px;padding:12px;transition:transform .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 10px 16px rgba(37,99,235,.12)}
+
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:14px}
+  .gallery img{width:100%;border-radius:10px;border:2px solid var(--teal);object-fit:cover;aspect-ratio:4/3;transition:transform .25s}
+  .gallery img:hover{transform:scale(1.03)}
+
+  .cta{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{background:var(--teal);color:#001915;padding:12px 16px;border-radius:10px;font-weight:800}
+  .btn.secondary{background:#fff;color:#0b0f19;border:2px solid #0b0f19}
+
+  footer{background:#0f1a3a;color:#fff;text-align:center;padding:18px;margin-top:26px;border-top:6px solid var(--teal)}
+
+  .bar{position:fixed;left:0;right:0;bottom:0;background:#ffffffd9;backdrop-filter:blur(6px);
+       display:flex;gap:10px;justify-content:center;padding:10px;border-top:2px solid var(--teal);z-index:999}
+  .bar a{background:#0f1a3a;color:#fff;padding:10px 14px;border-radius:999px;font-weight:800}
+  .bar a:nth-child(2){background:var(--teal);color:#003b33}
+  @media (min-width:820px){.bar{display:none}}
+  @media (max-width:900px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Living Easy Health Services LLC</h1>
+  <p>Compassionate Ambulatory Health Care • San Francisco, CA 94132</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="https://t4.ftcdn.net/jpg/01/41/89/93/360_F_141899399_9NtFEhgfRdqZ4bldAsHXZjDxoQ9muWXt.jpg" alt="Friendly care team">
+  <div class="box">
+    <h2 style="margin:0 0 6px;">Care that meets you where you are.</h2>
+    <p>Same-day appointments, telehealth, and preventive programs designed to keep you healthy and confident.</p>
+    <div>
+      <span class="pill wave">🩺 Preventive Visits</span>
+      <span class="pill">💬 Telehealth</span>
+      <span class="pill">🧪 Lab Work</span>
+      <span class="pill">🏠 Home Visits</span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:+18049004363">Call: 804-900-4363</a>
+      <a class="btn secondary" href="mailto:contact@xandira.shop">Email: contact@xandira.shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <div class="two">
+    <p><strong>Living Easy Health Services LLC</strong> provides accessible ambulatory care with a focus on prevention, chronic-condition support, and clear education. We combine in-clinic care and secure virtual visits for maximum convenience.</p>
+    <p><strong>Address:</strong> 1185 Holloway Ave, San Francisco, CA 94132 • <strong>Email:</strong> <a href="mailto:contact@xandira.shop">contact@xandira.shop</a> • <strong>Phone:</strong> <a href="tel:+18049004363">804-900-4363</a></p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Services</h2>
+  <div class="features">
+    <div class="card"><strong>Primary & Preventive Care</strong><br/>Annual wellness, screenings, vaccines, lifestyle planning.</div>
+    <div class="card"><strong>Chronic Care</strong><br/>Hypertension, diabetes, asthma/COPD, medication review.</div>
+    <div class="card"><strong>Telehealth</strong><br/>Secure video visits for follow-ups, counseling, and triage.</div>
+    <div class="card"><strong>Point-of-Care Labs</strong><br/>Rapid tests, bloodwork coordination, results explained.</div>
+    <div class="card"><strong>Home & Community Visits</strong><br/>Mobile care for patients with limited mobility.</div>
+    <div class="card"><strong>Care Navigation</strong><br/>Referrals, records, and benefits support.</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://avatars.mds.yandex.net/i?id=9c76e7b9a550845157bfed187ff54afa27c2a056-5177922-images-thumbs&n=13" alt="Clinic environment">
+    <img src="https://i.ytimg.com/vi/8RO2q6oG7tA/maxresdefault.jpg" alt="Telehealth session">
+    <img src="https://t3.ftcdn.net/jpg/03/91/28/44/360_F_391284415_IDzzvBSJqR80qAnMhAxp13YAPUs4eEjn.jpg" alt="Nurse taking vitals">
+    <img src="https://t3.ftcdn.net/jpg/00/56/55/60/360_F_56556060_65kucWQpUCTSSSJMQbbEsd2TN5rhFpIC.jpg" alt="Lab tests">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact & Hours</h2>
+  <div class="two">
+    <div>
+      <p>📧 <strong>Email:</strong> <a href="mailto:contact@xandira.shop">contact@xandira.shop</a></p>
+      <p>📞 <strong>Phone:</strong> <a href="tel:+18049004363">804-900-4363</a></p>
+      <p>📍 <strong>Address:</strong> 1185 Holloway Ave, San Francisco, CA 94132</p>
+    </div>
+    <div>
+      <p><em>Hours</em></p>
+      <ul>
+        <li>Mon–Fri: 9:00 – 18:00</li>
+        <li>Sat: 9:00 – 13:00</li>
+        <li>Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile quick actions -->
+<div class="bar">
+  <a href="tel:+18049004363">Call</a>
+  <a href="mailto:contact@xandira.shop">Email</a>
+  <a href="#services">Services</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Living Easy Health Services LLC — Ambulatory Health Care</p>
+</footer>
+</body>
+</html>
+e="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAT Cargo VAD LLC</title>
     <style>
         html {
@@ -180,3 +354,4 @@
 
 </body>
 </html>
+
